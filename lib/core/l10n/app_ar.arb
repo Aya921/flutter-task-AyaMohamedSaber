@@ -1,4 +1,5 @@
 {
-    "@@locale": "ar"
+    "@@locale": "ar",
+    "noRouteFound":"لا يوجد صفحه بهذا الاسم"
 
 }
