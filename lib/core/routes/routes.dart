@@ -8,8 +8,6 @@ abstract class Routes {
 
     switch (url.path) {
 
-     
-
       default:
         return MaterialPageRoute(
           builder: (context) {
