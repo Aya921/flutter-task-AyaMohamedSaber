@@ -25,6 +25,7 @@ dependencies:
   dio_cache_interceptor: ^4.0.3
   retrofit: ^4.7.2
   json_annotation: ^4.9.0
+  font_awesome_flutter: ^10.10.0
 
 dev_dependencies:
   flutter_test:
@@ -39,3 +40,15 @@ dev_dependencies:
 flutter:
   generate: true
   uses-material-design: true
+
+  fonts:
+  - family: Tajawal
+    fonts:
+      - asset: assets/fonts/tajawal/Tajawal-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/tajawal/Tajawal-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/tajawal/Tajawal-Bold.ttf
+        weight: 700
+      - asset: assets/fonts/tajawal/Tajawal-Light.ttf
+        weight: 300

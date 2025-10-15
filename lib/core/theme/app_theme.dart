@@ -8,6 +8,7 @@ abstract class AppTheme {
   static ThemeData getTheme(ColorScheme colors) {
     return ThemeData(
       colorScheme: colors,
+       fontFamily: 'Tajawal',
 
        scaffoldBackgroundColor: AppColors.white,
         appBarTheme: AppBarTheme(
@@ -26,7 +27,7 @@ abstract class AppTheme {
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-          backgroundColor: AppColors.pink[50],
+          backgroundColor: AppColors.blue,
           foregroundColor: AppColors.white,
           textStyle: GoogleFonts.roboto(
             fontSize: 20,
@@ -34,39 +35,14 @@ abstract class AppTheme {
           ),
         ),
       ),
-      inputDecorationTheme: InputDecorationTheme(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(4.0),
-          borderSide: BorderSide(color: AppColors.black[55]?? Colors.grey),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(4.0),
-          borderSide: BorderSide(color: AppColors.black[55]?? Colors.grey),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(4.0),
-          borderSide: BorderSide(color: AppColors.black[60]?? Colors.grey, width: 2.0),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(4.0),
-          borderSide: const BorderSide(color: AppColors.red),
-        ),
-        focusedErrorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8.0),
-          borderSide: const BorderSide(color: AppColors.red, width: 2.0),
-        ),
-        labelStyle: GoogleFonts.roboto(color: AppColors.black, fontSize: 16),
-        hintStyle: GoogleFonts.roboto(color: AppColors.black[55], fontSize: 14),
-        contentPadding:const  EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
-      ),
-    
+   
     );
   }
 
   static ThemeData lightTheme = getTheme(
     const ColorScheme(
       brightness: Brightness.light,
-      primary: AppColors.pink,
+      primary: AppColors.blue,
       onPrimary: AppColors.white,
       secondary: AppColors.black,
       onSecondary: AppColors.white, 

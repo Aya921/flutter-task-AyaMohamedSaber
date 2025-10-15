@@ -10,15 +10,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 class AppLanguageConfig extends ChangeNotifier {
   SharedPreferences sharedPreferences;
   AppLanguageConfig({required this.sharedPreferences});
-  String selectedLocal = Constants.enLocal;
+  String selectedLocal = Constants.arLocal;
 
-  bool isEn() => selectedLocal == Constants.enLocal;
+ // bool isEn() => selectedLocal == Constants.enLocal;
   @preResolve
   Future<void> setSelectedLocal()async {
     final  currentLocal = sharedPreferences.getString(
       Constants.sharedPrefrenceKeyLanguage,
     );
-    selectedLocal = currentLocal??Constants.enLocal;
+    selectedLocal = currentLocal??Constants.arLocal;
   }
 
   @preResolve
